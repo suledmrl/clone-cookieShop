@@ -8,7 +8,7 @@
 
 #img
 
-
+*.gif
 *.jpg
 *.png
 favicon/
