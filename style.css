@@ -115,6 +115,10 @@ ul {
     margin-left: 115px;
 }
 
+a[class=now] {
+    color: #c577a16b;
+}
+
 .social {
     float: right;
 }
@@ -141,11 +145,6 @@ ul {
     color: #f795c96b;
 }
 
-.now {
-    color: #c577a16b;
-    ;
-}
-
 .pages>ul {
     margin: 0;
     padding: 0;
@@ -156,11 +155,11 @@ ul {
     margin: 0;
     padding: 0;
 }
+/* HEADER---END */
 
 
 
-
-/* MAİN */
+/* MAİN----HOME */
 
 /* slider */
 
@@ -479,7 +478,7 @@ h2 {
 .more small{
     font-size: 14px;
 }
-
+/* MAİN----HOME----END */
 
 
 /* FOOTER */
@@ -492,8 +491,6 @@ footer{
     margin-bottom: 50px;
     
 }
-
-/* footer-1 */
 
 
 .footer-1{
@@ -586,7 +583,39 @@ footer{
 }
 
 
-/* footer-2 */
+/* FOOTER----END */
 
 
+/* MAİN----ABOUT-ME*/
 
+#about-me{
+    background-color: #F3F3F5;
+    width: 100%;
+    text-align: center;
+}
+
+#about-me div{
+    width: 55%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin: auto;
+}
+
+#about-me-img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about-me h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#about-me p{
+    font-size: 15px;
+    
+    line-height: 24px;
+    letter-spacing: -1px;
+}

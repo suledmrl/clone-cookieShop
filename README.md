@@ -4,7 +4,7 @@
 
 Yaptığım bu proje; "Wix" sitesinde bulunan ["Kurabiye Dükkanı"](https://www.wix.com/demone2/homemade-cookies-sto) site şablonunun bir klonunu HTML ve CSS kullanarak yaptığım bir e-ticaret sitesidir. 
 
-Sitenin yapımı tamamen tamamlanmamıştır. Henüz sadece "Home" sayfası yapılmıştır. Zamanla diğer kısımlar da eklenecektir. Ayrıca JAVASCRİPT kullanılarak da düzenlemeler ve eklemeler yapılacaktır. 
+Sitenin yapımı tamamen tamamlanmamıştır. Henüz sadece "Home" sayfası yapılmıştır. Zamanla diğer kısımlar da eklenecektir ve responsive bir tasarım haline getirilecektir. Ayrıca JAVASCRİPT kullanılarak da düzenlemeler ve eklemeler yapılacaktır. 
 
 ## Ekran Resmi
 
