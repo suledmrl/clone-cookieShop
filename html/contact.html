@@ -48,7 +48,7 @@
                 <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="shop.html">SHOP</a></li>
-                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="about.html" >ABOUT ME</a></li>
                     <li><a href="contact.html" class="now">CONTACT</a></li>
                 </ul>
             </div>
@@ -72,50 +72,86 @@
 
 
     <!-- main - start -->
-    <main>
+    <main id="main-con">
 
-        <section>
+        <div id="con-con">
+            <section id="que">
 
-            <div>
-                <h2>HAVE A QUESTION?</h2>
-                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
-                    double click me to add your own content and make changes to the font. Feel free to drag and drop me
-                    anywhere you like on your page.</p>
-            </div>
+                <div id="que-1">
+                    <h2>HAVE A QUESTION?</h2>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or
+                        double click me to add your own content and make changes to the font. Feel free to drag and drop
+                        me
+                        anywhere you like on your page.</p>
+                </div>
 
-            <div>
-                <input type="text" name="" id="" placeholder="Name">
-                <input type="email" name="" id="" placeholder="Email">
-                <input type="text" name="" id="" placeholder="Message">
-                <input type="submit" value="SUBMİT">
-            </div>
+                <div id="que-2">
+                    <div id="name-area">
+                        <div>
+                            <p>First Name*</p>
+                            <input required type="text" name="name" id="">
+                        </div>
+                        <div>
+                            <p>Last Name*</p>
+                            <input required type="text" name="lname" id="">
+                        </div>
+                    </div>
 
-        </section>
+                    <div id="email-area">
+                        <p>Email*</p>
+                        <input required type="email" name="email" id="">
+                    </div>
 
-        <section>
-            <div>
-                <h2>CONTACT ME</h2>
-                <p>Tel: 123-456-7890 <br>
-                    Email: info@my-domian.com</p>
-            </div>
+                    <div id="message-area">
+                        <p>Message</p>
+                        <textarea name="message" wrap="soft" id=""></textarea>
+                    </div>
 
-            <h3>OPENING HOURS:</h3>
+                    <div id="btn-area">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="con">
+                <div>
+                    <h3>CONTACT ME</h3>
+                    <p>Tel: 123-456-7890 <br>
+                        Email: info@mydomian.com</p>
+                </div>
+                <br>
+
+                <h3>OPENING HOURS</h3>
                 <p>Mon - Fri: 7am - 10pm <br> ​​
                     Saturday: 8am - 10pm <br>
                     Sunday: 8am - 11pm</p>
+                <br>
+                <div>
+                    <h3>ADDRESS</h3>
+                    <p>500 Terry Francine Street <br>
+                        San Francisco, CA 94158 <br>
+                        Tel: 123-456-7890</p>
+                </div>
 
-            <div>
-                <h3>ADDRESS:</h3>
-                <p>500 Terry Francine Street <br>
-                    San Francisco, CA 94158 <br>
-                    Tel: 123-456-7890</p>
-            </div>
+            </section>
 
-        </section>
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.868425070002!2d-122.40567572407792!3d37.
+                    793123171980696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a43592999%3A0xb24fc8f00745e3c6
+                    !2s500%20California%20St%2C%20San%20Francisco%2C%20CA%2094104%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!
+                    5e0!3m2!1str!2str!4v1736518518886!5m2!1str!2str" width="1000" height="300" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
 
-        <section>
-            
-        </section>
+            <!-- harita ekleme
+             google map aç>> istediğin noktayı işaretle>> Paylaş >> Harita Yerleştirme >> HTML'yi Kopyala -->
+
+        </div>
+
+
 
     </main>
     <!-- main - end -->
@@ -154,7 +190,12 @@
             <div class="nav4">
                 <h3>GET IT FRESH:</h3>
                 <div id="nav4-info">
-                    <input type="email" name="email" id="email" placeholder="    Enter your email here">
+                    <p>Enter your email here*</p>
+                    <input type="email" name="email" id="email" required>
+                    <div id="checkbox">
+                        <input type="checkbox" id="check" required>
+                        <label for="check">Yes, subscribe me to your newsletter.</label>
+                    </div>
                     <input type="submit" id="subscribe" value="SUBSCRIBE NOW">
                 </div>
             </div>

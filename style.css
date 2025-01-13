@@ -1,6 +1,7 @@
 :root{
     --hefo: #f3cbe0;
     --button: #f8c6e0;
+    --mid: #F3F3F5;
 }
 
 
@@ -75,6 +76,10 @@ ul {
     margin-top: 15px;
 }
 
+.on3:hover{
+    outline: 1.5px solid black;
+}
+
 
 #search {
     width: 200px;
@@ -88,14 +93,8 @@ ul {
     font-size: 23px;
 }
 
-.fa-basket-shopping:hover {
-    color: rgba(0, 0, 0, 0.514);
-}
-
-
-
-.login:hover {
-    color: rgba(0, 0, 0, 0.514);
+.fa-basket-shopping:hover, .login:hover {
+    opacity: 0.5;
 }
 
 
@@ -105,7 +104,6 @@ ul {
     padding-top: 40px;
     font-weight: 300;
 }
-
 
 .pages {
     float: left;
@@ -203,6 +201,11 @@ a[class=now] {
     position: absolute;
     top: 120%;
     left: 2%;
+    transition: opacity 0.4s;
+}
+
+.slider-button:hover{
+    opacity: 0.8;
 }
 
 /* best-seller */
@@ -247,11 +250,11 @@ a[class=now] {
 }
 
 .card a{
-    transition: opacity 0.4s;
-}
+    transition: filter 0.4s;
+} 
 
 .card a:hover{
-    opacity: 0.5;
+    filter: brightness(60%);
 }
 
 .card img {
@@ -396,7 +399,7 @@ h2 {
 
 /*yarım renk arka plan yapmak için eklendi*/
 .background{ 
-    background-color: #F3F3F5;
+    background-color: var(--mid);
     height: 400px;
 }
 
@@ -413,11 +416,11 @@ h2 {
 }
 
 .gallery a{
-    transition: opacity 0.4s;
+    transition: filter 0.4s;
 }
 
 .gallery a:hover{
-    opacity: 0.5; 
+    filter: brightness(60%); 
 }
 
 
@@ -432,12 +435,14 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 35px;
-    transition: color 0.4s;
+    transition: background-color 0.4s, border 0.4s;
 }
 
 .load-more-btn:hover{
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.458);
+    
+    background-color: var(--button);
+    border: 1px solid var(--button);
 }
 
 
@@ -448,6 +453,7 @@ h2 {
     margin: auto;
     display: flex;
     text-align: center;
+    margin-bottom: 50px;
    
     /* justify-content: space-around; ikinci tür kullanım için */
 }
@@ -544,15 +550,23 @@ footer{
     grid-area: nav4;
 }
 
-#nav4-info input{
-    margin-bottom: 4px;
+#subscribe, #email{
     width: 265px;
     height: 35px;
+}
+
+#checkbox{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #email {
     background-color:#f3d2e2;
     border: 2px #f189bf solid;
+}
+
+#email:hover{
+    border-color: #b2678e;
 }
 
 #subscribe{
@@ -619,3 +633,126 @@ footer{
     line-height: 24px;
     letter-spacing: -1px;
 }
+
+/* MAİN----ABOUT-ME----END*/
+
+
+
+/* MAİN----CONTACT*/
+#main-con{
+    background-color: var(--mid);
+    width: 100%;
+}
+
+#con-con{
+    width: 80%;
+    margin: auto;
+    
+    line-height: 24px;
+    letter-spacing: -1px;
+    
+}
+
+#que{
+    width: 55%;
+    float: left;
+    margin-top: 90px;
+}
+
+#que-1{
+    margin-bottom: 70px;
+}
+
+
+#que-1 h2{
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+#que-1 p, #con div p{
+    font-size: 15px;
+}
+
+#que-2 p{
+    color: #868687;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+
+#que-2 input{
+    border: 1px solid #868687;
+    background-color: var(--mid);
+}
+
+#btn-area{
+    float: right;
+    margin-top: 20px;
+}
+
+#btn-area input{
+    width: 120px;
+    height: 43px;
+    background-color: var(--button);
+    border: none;
+    transition: color 0.4s;
+    font-size: 17px;
+}
+
+#btn-area input:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+#name-area div{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+#name-area div:first-child{
+    float: left;
+    width: 48%;
+}
+
+#name-area div:last-child{
+    float: right;
+    width: 48%;
+}
+
+#name-area div input, #email-area input{
+    height: 40px;
+    width: 100%;
+}
+
+#email-area{
+    margin-bottom: 20px;
+}
+
+#message-area textarea{
+    height: 90px;
+    width: 100%;
+    border: 1px solid #868687;
+    background-color: var(--mid);
+}
+
+
+#con{
+    width: 20%;
+    float: right;
+    margin-top: 90px;
+}
+
+#con h3{
+    font-weight: 100;
+    font-size: 15px;
+} 
+
+#map{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+/* MAİN----CONTACT----END*/
